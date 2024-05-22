@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E2211172BFDAC0F00C74336 /* OpenAI in Frameworks */ = {isa = PBXBuildFile; productRef = 9E2211162BFDAC0F00C74336 /* OpenAI */; };
+		9E48243B2BF53321001C8487 /* GasCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E48243A2BF53321001C8487 /* GasCalculatorView.swift */; };
+		9E599E622BFD7AFF0098B947 /* OpenAISwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9E599E612BFD7AFF0098B947 /* OpenAISwift */; };
+		9EE8E4742BF4875300673FE1 /* TheoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8E4732BF4875300673FE1 /* TheoryView.swift */; };
+		9EE8E4782BF4879400673FE1 /* TriviaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8E4772BF4879400673FE1 /* TriviaView.swift */; };
+		9EE8E47A2BF487B100673FE1 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE8E4792BF487B100673FE1 /* HapticManager.swift */; };
+		9EFB4A872BF4162D003C8A05 /* ideal_gasApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4A862BF4162D003C8A05 /* ideal_gasApp.swift */; };
+		9EFB4A892BF4162D003C8A05 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4A882BF4162D003C8A05 /* ContentView.swift */; };
+		9EFB4A8B2BF4162E003C8A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB4A8A2BF4162E003C8A05 /* Assets.xcassets */; };
+		9EFB4A8E2BF4162E003C8A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EFB4A8D2BF4162E003C8A05 /* Preview Assets.xcassets */; };
+		9EFB4A982BF4162E003C8A05 /* ideal_gasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4A972BF4162E003C8A05 /* ideal_gasTests.swift */; };
+		9EFB4AA22BF4162E003C8A05 /* ideal_gasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AA12BF4162E003C8A05 /* ideal_gasUITests.swift */; };
+		9EFB4AA42BF4162E003C8A05 /* ideal_gasUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AA32BF4162E003C8A05 /* ideal_gasUITestsLaunchTests.swift */; };
+		9EFB4AB12BF416B1003C8A05 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AB02BF416B1003C8A05 /* Model.swift */; };
+		9EFB4AB32BF416D0003C8A05 /* GasSimulationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EFB4AB22BF416D0003C8A05 /* GasSimulationViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9EFB4A942BF4162E003C8A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFB4A7B2BF4162D003C8A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFB4A822BF4162D003C8A05;
+			remoteInfo = ideal_gas;
+		};
+		9EFB4A9E2BF4162E003C8A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EFB4A7B2BF4162D003C8A05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EFB4A822BF4162D003C8A05;
+			remoteInfo = ideal_gas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9E48243A2BF53321001C8487 /* GasCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasCalculatorView.swift; sourceTree = "<group>"; };
+		9EE8E4732BF4875300673FE1 /* TheoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoryView.swift; sourceTree = "<group>"; };
+		9EE8E4772BF4879400673FE1 /* TriviaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaView.swift; sourceTree = "<group>"; };
+		9EE8E4792BF487B100673FE1 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		9EFB4A832BF4162D003C8A05 /* ideal_gas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ideal_gas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFB4A862BF4162D003C8A05 /* ideal_gasApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ideal_gasApp.swift; sourceTree = "<group>"; };
+		9EFB4A882BF4162D003C8A05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9EFB4A8A2BF4162E003C8A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EFB4A8D2BF4162E003C8A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9EFB4A932BF4162E003C8A05 /* ideal_gasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ideal_gasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFB4A972BF4162E003C8A05 /* ideal_gasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ideal_gasTests.swift; sourceTree = "<group>"; };
+		9EFB4A9D2BF4162E003C8A05 /* ideal_gasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ideal_gasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EFB4AA12BF4162E003C8A05 /* ideal_gasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ideal_gasUITests.swift; sourceTree = "<group>"; };
+		9EFB4AA32BF4162E003C8A05 /* ideal_gasUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ideal_gasUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9EFB4AB02BF416B1003C8A05 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9EFB4AB22BF416D0003C8A05 /* GasSimulationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasSimulationViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EFB4A802BF4162D003C8A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E2211172BFDAC0F00C74336 /* OpenAI in Frameworks */,
+				9E599E622BFD7AFF0098B947 /* OpenAISwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A902BF4162E003C8A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A9A2BF4162E003C8A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E3A1D742BF5B48500CD646B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4AB02BF416B1003C8A05 /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E3A1D752BF5B48D00CD646B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4A882BF4162D003C8A05 /* ContentView.swift */,
+				9E48243A2BF53321001C8487 /* GasCalculatorView.swift */,
+				9EE8E4772BF4879400673FE1 /* TriviaView.swift */,
+				9EE8E4732BF4875300673FE1 /* TheoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9E3A1D762BF5B49300CD646B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4AB22BF416D0003C8A05 /* GasSimulationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9E3A1D772BF5B4EB00CD646B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				9EE8E4792BF487B100673FE1 /* HapticManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		9EFB4A7A2BF4162D003C8A05 = {
+			isa = PBXGroup;
+			children = (
+				9EFB4A852BF4162D003C8A05 /* ideal_gas */,
+				9EFB4A962BF4162E003C8A05 /* ideal_gasTests */,
+				9EFB4AA02BF4162E003C8A05 /* ideal_gasUITests */,
+				9EFB4A842BF4162D003C8A05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9EFB4A842BF4162D003C8A05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4A832BF4162D003C8A05 /* ideal_gas.app */,
+				9EFB4A932BF4162E003C8A05 /* ideal_gasTests.xctest */,
+				9EFB4A9D2BF4162E003C8A05 /* ideal_gasUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EFB4A852BF4162D003C8A05 /* ideal_gas */ = {
+			isa = PBXGroup;
+			children = (
+				9E3A1D772BF5B4EB00CD646B /* Utilities */,
+				9E3A1D762BF5B49300CD646B /* ViewModels */,
+				9E3A1D752BF5B48D00CD646B /* Views */,
+				9E3A1D742BF5B48500CD646B /* Models */,
+				9EFB4A862BF4162D003C8A05 /* ideal_gasApp.swift */,
+				9EFB4A8A2BF4162E003C8A05 /* Assets.xcassets */,
+				9EFB4A8C2BF4162E003C8A05 /* Preview Content */,
+			);
+			path = ideal_gas;
+			sourceTree = "<group>";
+		};
+		9EFB4A8C2BF4162E003C8A05 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4A8D2BF4162E003C8A05 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9EFB4A962BF4162E003C8A05 /* ideal_gasTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4A972BF4162E003C8A05 /* ideal_gasTests.swift */,
+			);
+			path = ideal_gasTests;
+			sourceTree = "<group>";
+		};
+		9EFB4AA02BF4162E003C8A05 /* ideal_gasUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EFB4AA12BF4162E003C8A05 /* ideal_gasUITests.swift */,
+				9EFB4AA32BF4162E003C8A05 /* ideal_gasUITestsLaunchTests.swift */,
+			);
+			path = ideal_gasUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EFB4A822BF4162D003C8A05 /* ideal_gas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFB4AA72BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gas" */;
+			buildPhases = (
+				9EFB4A7F2BF4162D003C8A05 /* Sources */,
+				9EFB4A802BF4162D003C8A05 /* Frameworks */,
+				9EFB4A812BF4162D003C8A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ideal_gas;
+			packageProductDependencies = (
+				9E599E612BFD7AFF0098B947 /* OpenAISwift */,
+				9E2211162BFDAC0F00C74336 /* OpenAI */,
+			);
+			productName = ideal_gas;
+			productReference = 9EFB4A832BF4162D003C8A05 /* ideal_gas.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EFB4A922BF4162E003C8A05 /* ideal_gasTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFB4AAA2BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gasTests" */;
+			buildPhases = (
+				9EFB4A8F2BF4162E003C8A05 /* Sources */,
+				9EFB4A902BF4162E003C8A05 /* Frameworks */,
+				9EFB4A912BF4162E003C8A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFB4A952BF4162E003C8A05 /* PBXTargetDependency */,
+			);
+			name = ideal_gasTests;
+			productName = ideal_gasTests;
+			productReference = 9EFB4A932BF4162E003C8A05 /* ideal_gasTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EFB4A9C2BF4162E003C8A05 /* ideal_gasUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EFB4AAD2BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gasUITests" */;
+			buildPhases = (
+				9EFB4A992BF4162E003C8A05 /* Sources */,
+				9EFB4A9A2BF4162E003C8A05 /* Frameworks */,
+				9EFB4A9B2BF4162E003C8A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EFB4A9F2BF4162E003C8A05 /* PBXTargetDependency */,
+			);
+			name = ideal_gasUITests;
+			productName = ideal_gasUITests;
+			productReference = 9EFB4A9D2BF4162E003C8A05 /* ideal_gasUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EFB4A7B2BF4162D003C8A05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					9EFB4A822BF4162D003C8A05 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					9EFB4A922BF4162E003C8A05 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 9EFB4A822BF4162D003C8A05;
+					};
+					9EFB4A9C2BF4162E003C8A05 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 9EFB4A822BF4162D003C8A05;
+					};
+				};
+			};
+			buildConfigurationList = 9EFB4A7E2BF4162D003C8A05 /* Build configuration list for PBXProject "ideal_gas" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9EFB4A7A2BF4162D003C8A05;
+			packageReferences = (
+				9E599E5C2BFD7A110098B947 /* XCRemoteSwiftPackageReference "OpenAISwift" */,
+				9E2211152BFDAB8700C74336 /* XCRemoteSwiftPackageReference "OpenAI" */,
+			);
+			productRefGroup = 9EFB4A842BF4162D003C8A05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EFB4A822BF4162D003C8A05 /* ideal_gas */,
+				9EFB4A922BF4162E003C8A05 /* ideal_gasTests */,
+				9EFB4A9C2BF4162E003C8A05 /* ideal_gasUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EFB4A812BF4162D003C8A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFB4A8E2BF4162E003C8A05 /* Preview Assets.xcassets in Resources */,
+				9EFB4A8B2BF4162E003C8A05 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A912BF4162E003C8A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A9B2BF4162E003C8A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EFB4A7F2BF4162D003C8A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE8E4742BF4875300673FE1 /* TheoryView.swift in Sources */,
+				9EFB4AB12BF416B1003C8A05 /* Model.swift in Sources */,
+				9EE8E47A2BF487B100673FE1 /* HapticManager.swift in Sources */,
+				9E48243B2BF53321001C8487 /* GasCalculatorView.swift in Sources */,
+				9EFB4A892BF4162D003C8A05 /* ContentView.swift in Sources */,
+				9EE8E4782BF4879400673FE1 /* TriviaView.swift in Sources */,
+				9EFB4A872BF4162D003C8A05 /* ideal_gasApp.swift in Sources */,
+				9EFB4AB32BF416D0003C8A05 /* GasSimulationViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A8F2BF4162E003C8A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFB4A982BF4162E003C8A05 /* ideal_gasTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFB4A992BF4162E003C8A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EFB4AA42BF4162E003C8A05 /* ideal_gasUITestsLaunchTests.swift in Sources */,
+				9EFB4AA22BF4162E003C8A05 /* ideal_gasUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EFB4A952BF4162E003C8A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFB4A822BF4162D003C8A05 /* ideal_gas */;
+			targetProxy = 9EFB4A942BF4162E003C8A05 /* PBXContainerItemProxy */;
+		};
+		9EFB4A9F2BF4162E003C8A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EFB4A822BF4162D003C8A05 /* ideal_gas */;
+			targetProxy = 9EFB4A9E2BF4162E003C8A05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9EFB4AA52BF4162E003C8A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9EFB4AA62BF4162E003C8A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EFB4AA82BF4162E003C8A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ideal_gas/Preview Content\"";
+				DEVELOPMENT_TEAM = QLCNKZ7527;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gas Ideal";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EFB4AA92BF4162E003C8A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ideal_gas/Preview Content\"";
+				DEVELOPMENT_TEAM = QLCNKZ7527;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Gas Ideal";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gas";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9EFB4AAB2BF4162E003C8A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ideal_gas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ideal_gas";
+			};
+			name = Debug;
+		};
+		9EFB4AAC2BF4162E003C8A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gasTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ideal_gas.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ideal_gas";
+			};
+			name = Release;
+		};
+		9EFB4AAE2BF4162E003C8A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ideal_gas;
+			};
+			name = Debug;
+		};
+		9EFB4AAF2BF4162E003C8A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.co.uptc.ideal-gasUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ideal_gas;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EFB4A7E2BF4162D003C8A05 /* Build configuration list for PBXProject "ideal_gas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFB4AA52BF4162E003C8A05 /* Debug */,
+				9EFB4AA62BF4162E003C8A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFB4AA72BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFB4AA82BF4162E003C8A05 /* Debug */,
+				9EFB4AA92BF4162E003C8A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFB4AAA2BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gasTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFB4AAB2BF4162E003C8A05 /* Debug */,
+				9EFB4AAC2BF4162E003C8A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EFB4AAD2BF4162E003C8A05 /* Build configuration list for PBXNativeTarget "ideal_gasUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EFB4AAE2BF4162E003C8A05 /* Debug */,
+				9EFB4AAF2BF4162E003C8A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E2211152BFDAB8700C74336 /* XCRemoteSwiftPackageReference "OpenAI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MacPaw/OpenAI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.9;
+			};
+		};
+		9E599E5C2BFD7A110098B947 /* XCRemoteSwiftPackageReference "OpenAISwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/adamrushy/OpenAISwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E2211162BFDAC0F00C74336 /* OpenAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E2211152BFDAB8700C74336 /* XCRemoteSwiftPackageReference "OpenAI" */;
+			productName = OpenAI;
+		};
+		9E599E612BFD7AFF0098B947 /* OpenAISwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = OpenAISwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 9EFB4A7B2BF4162D003C8A05 /* Project object */;
+}
