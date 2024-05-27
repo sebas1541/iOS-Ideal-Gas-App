@@ -46,11 +46,10 @@ En la sección de teoría, se incluyen generalidades de:
    - Abra Xcode y ejecute el un simulador de iOS o en preview desde el archivo ContentView.
 
 2. **Clonar el Repositorio**:
-   \\`bash
+   
    git clone https://github.com/sebas1541/iOS-Ideal-Gas-App.git
    cd ideal_gas
-   \\`
-
+  
 3. **Abrir el Proyecto**:
    - Abra `ideal_gas.xcodeproj` o `ideal_gas.xcworkspace` en Xcode.
 
