@@ -93,9 +93,6 @@ Puede virtualizar macOS dentro de sistemas operativos como Windows o Linux.
 5. **Clonar y Ejecutar el Proyecto**:
    - Siga los pasos anteriores para clonar el repositorio y ejecutar el proyecto en Xcode.
 
-## Consideraciones
-
-Para cualquier problema o contribución, puede enviar un pull request :)
 
 ## Enlace del Repositorio
 
